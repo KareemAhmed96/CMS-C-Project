@@ -32,7 +32,7 @@
 #define RESERVED                    1
 #define NOT_RESERVED                0
 
-int patient_count;
+unsigned char patient_count;
 unsigned char Current_Mode;
 unsigned char admin_cases;
 unsigned char ID_Flag;
@@ -45,7 +45,7 @@ typedef struct {
     char Name[25];
     int Age;
     char Gender[25];
-    int ID;
+    long ID;
     unsigned char reserved_slot;
 
 } Basic_Info_Type;
