@@ -35,6 +35,8 @@ the available slots window.
 In the user mode
 
 
+
+
 There is no password. The system allows the following features:
 1. View patient record:
 -----------------------
