@@ -45,3 +45,6 @@ By entering the patient ID, the system shall show the basic information for the 
 2. View today’s reservations:
 -----------------------------
 In this view, the system shall print all reservations with the patient ID attached to each reservation slot.
+
+This material is developed by IMTSchool for educational use only,
+All copyrights are reserved.
