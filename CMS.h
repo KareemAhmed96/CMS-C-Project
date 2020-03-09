@@ -7,8 +7,8 @@
 #define FALSE                       0
 
 #define NOT_DETERMINED              0
-#define ADMIN		                1
-#define	USER		                2
+#define ADMIN		              1
+#define	USER		              2
 #define ADMIN_LOGGED_IN             3
 
 #define MAX_PWD_ATTEMPTS            3
