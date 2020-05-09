@@ -149,9 +149,13 @@ void Reserve_Slot_Menu(void)
 	for(int i = 0 ; i < N_SLOTS ; i++)
 	{	
 		if(available_slots[i] == RESERVED)
+		{
 			no_available_slots = TRUE;
+		}
 		else
+		{
 			no_available_slots = FALSE;
+		}
 	}
 
 	printf("\nChoose one of the available slots: -\n");
