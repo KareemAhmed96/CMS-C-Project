@@ -32,7 +32,8 @@ unsigned char Request_Password(void)
 	fflush(stdin);
 	scanf("%d", &password_input);
 
-	//Can be modified to be an array of digits
+	// Can be modified to be an array of digits
+	// This is just a simple implementation
 	if(password_input == 1234)
 	{
 		return SUCCESS;
@@ -51,7 +52,7 @@ void Verify_Admin_Login(void)
 	}
 	else
 	{	
-		//MISRA-C Violation 
+		// MISRA-C Violation 
 		for(int i=MAX_PWD_ATTEMPTS ; (i>0) && Current_Mode != ADMIN_LOGGED_IN ; i--)
 		{
 			printf("You have %d trials remaining, ", i);
@@ -104,7 +105,7 @@ unsigned char Add_New_Patient_Record(void)
 		fflush(stdin);
 		scanf("%d", &Patient_Database[patient_count].ID);
 	
-		//Checking that ID is unique...
+		// Checking that ID is unique...
 		for(i = patient_count ; i >= 0 ; i--)
 		{
 			if(ID_Flag == FIRST_ID)
@@ -125,7 +126,7 @@ unsigned char Add_New_Patient_Record(void)
 		
 	}while(ID_Flag == ID_IS_NOT_UNIQUE);
 
-	//Checking
+	// Checks
 	printf("\n***Successfully added new patient***\n");
 	printf("Name: %s\n", Patient_Database[patient_count].Name);
 	printf("Age: %d\n", Patient_Database[patient_count].Age);
@@ -221,7 +222,7 @@ unsigned char Reserve_Slot(unsigned char slot_number)
 		fflush(stdin);
 		scanf("%d", &rsv_id_input);
 
-		//Checking that the entered ID exists
+		// Validating that the entered ID exists
 		for(int i = patient_count ; i >= 0 ; i--)
 		{
 			if(rsv_id_input == Patient_Database[patient_count].ID)
